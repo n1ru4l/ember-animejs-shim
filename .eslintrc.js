@@ -19,5 +19,6 @@ module.exports = {
     'array-bracket-spacing': [`error`, `always`, {
       'objectsInArrays': false,
     }],
+    'no-var': [`error`],
   }
 };
