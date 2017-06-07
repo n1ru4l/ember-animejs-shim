@@ -6,12 +6,12 @@
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Laurin Quast <laurinquast@googlemail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/n1ru4l/ember-animejs-shim",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
