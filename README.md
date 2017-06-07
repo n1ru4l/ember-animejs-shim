@@ -1,26 +1,26 @@
 # ember-animejs-shim
 
-This README outlines the details of collaborating on this Ember addon.
+[Anime](https://github.com/juliangarnier/anime) shim for ember.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-animejs-shim`
-* `npm install`
+* `cd <your-ember-project-directory>`
+* `ember install ember-animejs-shim`
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```javascript
+import Ember from 'ember'
+import anime from 'animejs'
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+export default Ember.Component.extend({
+  componentDidMount(...args) {
+    anime({
+      targets: this.element,
+      translateY: 100,
+      duration: 1337,
+    })
+    this._super(...args)
+  }
+})
+```
